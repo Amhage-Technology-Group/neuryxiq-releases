@@ -1,6 +1,22 @@
-# NeuryxIQ Downloads
+<p align="center">
+  <img src="https://github.com/Amhage-Technology-Group.png" width="128" alt="NeuryxIQ">
+</p>
+<h1 align="center">NeuryxIQ</h1>
+<p align="center"><b>Answers, not alerts.</b><br>
+AI-ready security operations and HIPAA posture for small medical and dental practices, on your own hardware.</p>
 
-**Answers, not alerts.** AI-ready security operations and HIPAA posture for small medical and dental practices, running on your own hardware.
+<p align="center">
+  <a href="https://github.com/Amhage-Technology-Group/neuryxiq-releases/releases/latest/download/NeuryxIQ-Setup.exe"><img src="https://img.shields.io/badge/Download-NeuryxIQ--Setup.exe-2b6cff?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/Amhage-Technology-Group/neuryxiq-releases/releases/latest"><img src="https://img.shields.io/github/v/release/Amhage-Technology-Group/neuryxiq-releases?label=latest&color=2b6cff" alt="Latest release"></a>
+  <img src="https://img.shields.io/github/downloads/Amhage-Technology-Group/neuryxiq-releases/total?color=2b6cff&label=downloads" alt="Downloads">
+  <img src="https://img.shields.io/badge/license-GPLv2-1f6feb" alt="License GPLv2">
+  <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-0078d4" alt="Windows 10/11">
+  <a href="https://neuryxiq.cloud"><img src="https://img.shields.io/badge/managed%20cloud-neuryxiq.cloud-0b2447" alt="Managed cloud"></a>
+</p>
+
+---
 
 This repository holds the official NeuryxIQ installers and deployment files. Download, install, and you are protected in minutes. No account required.
 
