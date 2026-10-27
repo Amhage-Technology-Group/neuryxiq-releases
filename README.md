@@ -31,7 +31,7 @@ Requirements: Windows 10/11 64-bit, 8 GB RAM (16 GB recommended), 20 GB free dis
 1. Run `NeuryxIQ-Setup.exe`. Windows may show an "unknown publisher" notice for this release: choose **More info → Run anyway**.
 2. Accept the license and click through. If Docker Desktop is being installed for the first time, Windows may ask to restart; restart, then start NeuryxIQ from the desktop shortcut.
 3. When asked, optionally paste your Claude (Anthropic) API key to turn on the AI SOC. Leave it blank for human-only monitoring; you can add it later by running "Start NeuryxIQ" again.
-4. The console opens at **https://localhost/** (a one-time certificate warning on localhost is expected).
+4. Windows asks once for permission to trust the install's own certificate (click Yes). The console then opens at **https://neuryxiq.localhost/** with a padlock, no warning. (`https://localhost/` works too.)
 
 **First login:** `admin` / `admin`. Change the password immediately after signing in.
 
@@ -43,17 +43,17 @@ A single-node NeuryxIQ stack in Docker: the NeuryxIQ console, the NeuryxIQ index
 
 ## Linux / manual deployment
 
-`neuryxiq-deploy-v1.0.1.zip` on the [latest release](../../releases/latest) contains the same `docker-compose.yml`, `Caddyfile`, `env.example` and certificate config the installer uses, for teams that prefer to run it by hand (Docker Engine + Compose v2 required):
+`neuryxiq-deploy-v1.0.2.zip` on the [latest release](../../releases/latest) contains the same `docker-compose.yml`, `Caddyfile`, `env.example` and certificate config the installer uses, for teams that prefer to run it by hand (Docker Engine + Compose v2 required):
 
 ```bash
 cp env.example .env
 docker compose up -d
-# then open https://<your-host>/
+# then open https://<your-host>/  (trust the CA Caddy generates, or use your own cert)
 ```
 
 ## Verify your download
 
-SHA-256 of `NeuryxIQ-Setup.exe` (v1.0.1): `73eea1ee78825c4c6a844e3868522d847265fb9cc7b696a5d47f9401c5752ef5`
+SHA-256 of `NeuryxIQ-Setup.exe` (v1.0.2): `b357522dfe723b39706279508f3e6d4fbe0bab2aeb93722d09bc1a9391920960`
 
 ## Support and commercial services
 
