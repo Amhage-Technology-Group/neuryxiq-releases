@@ -42,6 +42,10 @@ Add your first device: open **https://&lt;this-pc-name&gt;/enroll/** from any co
 
 A single-node NeuryxIQ stack in Docker: the NeuryxIQ console, the NeuryxIQ indexer, the NeuryxIQ manager (devices report to it on ports 1514/1515), the enrollment service, the adapter that feeds the console, and a TLS front end on ports 80 and 443. Each install generates its own certificate authority; nothing is shared between installs.
 
+## Virtual appliance (preview)
+
+`NeuryxIQ-Appliance-<version>.ova` on the [latest release](../../releases/latest): a ready-to-run virtual machine (Ubuntu 24.04 LTS) for VirtualBox, VMware or Proxmox, for Windows Server and Linux shops or anyone who wants NeuryxIQ to boot with the host. Import it, set the network adapter to **Bridged**, power on. First boot needs internet and takes about five minutes; the VM screen then shows the console address (`https://<vm-ip>/`, admin / admin) and the Add devices page. Shell login `neuryxiq` / `neuryxiq` (change it with `passwd`). 2 vCPU, 8 GB RAM, 60 GB disk. Preview: import-tested; report boot issues to support@neuryxiq.com.
+
 ## Linux / manual deployment
 
 `neuryxiq-deploy-v1.0.3.zip` on the [latest release](../../releases/latest) contains the same `docker-compose.yml`, `Caddyfile`, `env.example`, enrollment service, adapter and certificate config the installer uses, for teams that prefer to run it by hand (Docker Engine + Compose v2 required):
@@ -57,6 +61,8 @@ docker compose up -d
 SHA-256 of `NeuryxIQ-Setup.exe` (v1.0.3): `9b5ec055ccbfe2760d841dad92caf728cb842de77f5a5dd8117792b7fe801489`
 
 SHA-256 of `neuryxiq-deploy-v1.0.3.zip`: `ee36ed109e40e579f8fcf9d66dcaa019100d0f0c834ec220e34afd1e4c19e97f`
+
+SHA-256 of `NeuryxIQ-Appliance-1.0.3.ova`: `dc7c8619d8b679c8fc6123b3f471667cf2cddc6d54e459571a54085325c49b0e`
 
 ## Support and commercial services
 
