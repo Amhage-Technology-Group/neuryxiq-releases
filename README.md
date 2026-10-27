@@ -2,8 +2,9 @@
   <img src="https://github.com/Amhage-Technology-Group.png" width="128" alt="NeuryxIQ">
 </p>
 <h1 align="center">NeuryxIQ</h1>
-<p align="center"><b>Answers, not alerts.</b><br>
-AI-ready security operations and HIPAA posture for small medical and dental practices, on your own hardware.</p>
+<p align="center"><b>The Autonomous Security Platform.</b><br>
+Powered by AI superintelligence. Answers, not alerts.<br>
+Security operations and HIPAA posture for small medical and dental practices, on your own hardware.</p>
 
 <p align="center">
   <a href="https://github.com/Amhage-Technology-Group/neuryxiq-releases/releases/latest/download/NeuryxIQ-Setup.exe"><img src="https://img.shields.io/badge/Download-NeuryxIQ--Setup.exe-2b6cff?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows"></a>
