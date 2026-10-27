@@ -13,7 +13,7 @@ AI-ready security operations and HIPAA posture for small medical and dental prac
   <img src="https://img.shields.io/github/downloads/Amhage-Technology-Group/neuryxiq-releases/total?color=2b6cff&label=downloads" alt="Downloads">
   <img src="https://img.shields.io/badge/license-GPLv2-1f6feb" alt="License GPLv2">
   <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-0078d4" alt="Windows 10/11">
-  <a href="https://neuryxiq.cloud"><img src="https://img.shields.io/badge/managed%20cloud-neuryxiq.cloud-0b2447" alt="Managed cloud"></a>
+  <a href="https://neuryxiq.com"><img src="https://img.shields.io/badge/managed%20cloud-neuryxiq.com-0b2447" alt="Managed cloud"></a>
 </p>
 
 ---
@@ -57,7 +57,7 @@ SHA-256 of `NeuryxIQ-Setup.exe` (v1.0.2): `b357522dfe723b39706279508f3e6d4fbe0ba
 
 ## Support and commercial services
 
-The on-premises edition is free to download and use. Amhage Technology Group offers paid installation, support contracts, and a fully managed cloud edition at [neuryxiq.cloud](https://neuryxiq.cloud). Questions: hello@neuryxiq.cloud
+The on-premises edition is free to download and use. Want a team behind it? **[Support Plan, $199/mo, and Professional Install, $499](https://neuryxiq.com/services/)**, card checkout, no contract. Would rather we ran it? **[Upgrade to the managed cloud](https://neuryxiq.com/upgrade/)**, live in about 30 minutes. Questions: hello@neuryxiq.com
 
 ## License and trademarks
 
