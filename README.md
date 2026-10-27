@@ -13,7 +13,7 @@ Security operations and HIPAA posture for small medical and dental practices, on
   <a href="https://github.com/Amhage-Technology-Group/neuryxiq-releases/releases/latest"><img src="https://img.shields.io/github/v/release/Amhage-Technology-Group/neuryxiq-releases?label=latest&color=2b6cff" alt="Latest release"></a>
   <img src="https://img.shields.io/github/downloads/Amhage-Technology-Group/neuryxiq-releases/total?color=2b6cff&label=downloads" alt="Downloads">
   <img src="https://img.shields.io/badge/license-GPLv2-1f6feb" alt="License GPLv2">
-  <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-0078d4" alt="Windows 10/11">
+  <img src="https://img.shields.io/badge/platform-Windows%2011-0078d4" alt="Windows 11">
   <a href="https://neuryxiq.com"><img src="https://img.shields.io/badge/managed%20cloud-neuryxiq.com-0b2447" alt="Managed cloud"></a>
 </p>
 
@@ -23,9 +23,9 @@ This repository holds the official NeuryxIQ installers and deployment files. Dow
 
 ## Download
 
-**Windows (recommended):** grab `NeuryxIQ-Setup.exe` from the [latest release](../../releases/latest).
+**Windows (recommended):** grab `NeuryxIQ-Setup.exe` from the [latest release](../../releases/latest). Also on [SourceForge](https://sourceforge.net/projects/neuryxiq/).
 
-Requirements: Windows 10/11 64-bit, 8 GB RAM (16 GB recommended), 20 GB free disk. The installer installs Docker Desktop for you if it is not already present.
+Requirements: Windows 11 64-bit, 8 GB RAM (16 GB recommended), 20 GB free disk. The installer installs Docker Desktop for you if it is not already present.
 
 ## Install
 
@@ -36,15 +36,15 @@ Requirements: Windows 10/11 64-bit, 8 GB RAM (16 GB recommended), 20 GB free dis
 
 **First login:** `admin` / `admin`. Change the password immediately after signing in.
 
-Add your first device from the Command Center: pick the Windows workstation or server, copy the one-line installer, and it appears in the console protected.
+Add your first device: open **https://&lt;this-pc-name&gt;/enroll/** from any computer in the practice (Windows or Linux) and run the one command shown, or use the Command Center's *Add a device* sheet. It appears in the console within a minute or two.
 
 ## What gets installed
 
-A single-node NeuryxIQ stack in Docker: the NeuryxIQ console, the NeuryxIQ indexer, the NeuryxIQ manager, and a TLS front end on ports 80 and 443. Each install generates its own certificate authority; nothing is shared between installs.
+A single-node NeuryxIQ stack in Docker: the NeuryxIQ console, the NeuryxIQ indexer, the NeuryxIQ manager (devices report to it on ports 1514/1515), the enrollment service, the adapter that feeds the console, and a TLS front end on ports 80 and 443. Each install generates its own certificate authority; nothing is shared between installs.
 
 ## Linux / manual deployment
 
-`neuryxiq-deploy-v1.0.2.zip` on the [latest release](../../releases/latest) contains the same `docker-compose.yml`, `Caddyfile`, `env.example` and certificate config the installer uses, for teams that prefer to run it by hand (Docker Engine + Compose v2 required):
+`neuryxiq-deploy-v1.0.3.zip` on the [latest release](../../releases/latest) contains the same `docker-compose.yml`, `Caddyfile`, `env.example`, enrollment service, adapter and certificate config the installer uses, for teams that prefer to run it by hand (Docker Engine + Compose v2 required):
 
 ```bash
 cp env.example .env
@@ -54,7 +54,9 @@ docker compose up -d
 
 ## Verify your download
 
-SHA-256 of `NeuryxIQ-Setup.exe` (v1.0.2): `b357522dfe723b39706279508f3e6d4fbe0bab2aeb93722d09bc1a9391920960`
+SHA-256 of `NeuryxIQ-Setup.exe` (v1.0.3): `9b5ec055ccbfe2760d841dad92caf728cb842de77f5a5dd8117792b7fe801489`
+
+SHA-256 of `neuryxiq-deploy-v1.0.3.zip`: `ee36ed109e40e579f8fcf9d66dcaa019100d0f0c834ec220e34afd1e4c19e97f`
 
 ## Support and commercial services
 
