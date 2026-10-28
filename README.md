@@ -50,7 +50,7 @@ Pricing and terms: https://neuryxiq.com/services/ and https://neuryxiq.com/upgra
 
 | Component | Requirement |
 |---|---|
-| Windows server | Windows 11 (64-bit), 8 GB RAM (16 GB recommended), 20 GB free disk, 2 cores. Docker Desktop is installed automatically when absent. |
+| Windows server | Windows 11 (64-bit), 8 GB RAM (16 GB recommended), 60 GB free disk (platform images about 23 GB extracted, vulnerability feed about 15 GB), 2 cores. Docker Desktop is installed automatically when absent. |
 | Virtual appliance | VirtualBox 7, VMware Workstation/ESXi, or Proxmox. 2 vCPU, 8 GB RAM, 60 GB disk. Outbound internet on first boot. |
 | Linux (Compose) | Docker Engine with Compose v2. Sizing as for the appliance. |
 | Protected devices | Windows 11 workstations and servers; Linux servers (Debian/Ubuntu and RHEL families). TCP 1514 and 1515 to the server. |
@@ -60,7 +60,7 @@ Pricing and terms: https://neuryxiq.com/services/ and https://neuryxiq.com/upgra
 
 **Windows installer.** Download `NeuryxIQ-Setup.exe` from the [latest release](../../releases/latest) and run it. The installer places the deployment files, installs Docker Desktop if required, generates the install's enrollment key and certificate authority, opens the required Windows Firewall ports (one elevation prompt), and opens the console at `https://neuryxiq.localhost/`. Windows may display an unknown-publisher notice for this release; choose *More info → Run anyway*. Silent install: `NeuryxIQ-Setup.exe /S`.
 
-**Virtual appliance.** Import `NeuryxIQ-Appliance-<version>.ova`, set the network adapter to Bridged, and power on. The appliance configures itself on first boot (Ubuntu 24.04 LTS; approximately five minutes with internet access) and presents the console address on its screen. The appliance is currently released as a preview.
+**Virtual appliance.** Import `NeuryxIQ-Appliance-<version>.ova`, set the network adapter to Bridged, and power on. The appliance configures itself on first boot (Ubuntu 24.04 LTS; approximately ten minutes with internet access) and presents the console address on its screen.
 
 **Docker Compose.** `neuryxiq-deploy-<version>.zip` contains the deployment files used by both editions above (`docker-compose.yml`, `Caddyfile`, `env.example`, certificate configuration, enrollment service, adapter). See the Installation Guide for the procedure.
 
