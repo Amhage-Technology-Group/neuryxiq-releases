@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">NeuryxIQ</h1>
 <p align="center"><b>The Autonomous Security Platform for medical and dental practices.</b><br>
-Security operations, detection and HIPAA posture in one console. Answers, not alerts.</p>
+Powered by AI Superintelligence. Security operations, detection and HIPAA posture in one console. Answers, not alerts.</p>
 
 <p align="center">
   <a href="https://github.com/Amhage-Technology-Group/neuryxiq-releases/releases/latest/download/NeuryxIQ-Setup.exe"><img src="https://img.shields.io/badge/Download-Windows%20Installer-2b6cff?style=for-the-badge&logo=windows&logoColor=white" alt="Download the Windows installer"></a>
@@ -42,7 +42,7 @@ Pricing and terms: https://neuryxiq.com/services/ and https://neuryxiq.com/upgra
 - **Detection and response**: every device event evaluated against the detection library; findings ranked by real risk and mapped to MITRE ATT&CK.
 - **Asset intelligence**: operating system, software inventory, open ports, services and hotfixes for every enrolled device, refreshed automatically.
 - **Compliance**: benchmark checks scored against HIPAA Security Rule, PCI DSS, NIST and ISO; an automated Security Risk Assessment; 22 HIPAA policy templates ready to adopt.
-- **AI SOC** (optional): three analyst tiers (monitoring and triage, investigation and response, threat hunting and forensics) operating on your own Anthropic API key, with an auditable decision log. The platform runs fully without it.
+- **AI Swarm** (optional AI SOC): eight AI specialists working as one team across three tiers (monitoring and triage, investigation and response, threat hunting and forensics), handing cases to each other across the NIST CSF functions. Every specialist carries a security body of knowledge built from public standards (NIST SP 800-53, MITRE ATT&CK, CISA KEV, HIPAA 45 CFR 164) and the published objectives behind the major security certifications; every answer cites its source. Operates on your own Anthropic API key with an auditable decision log; a person approves actions. The specialists hold no human certification. The platform runs fully without it.
 - **Reporting**: board-ready, branded reports generated from live data.
 - **Device enrollment**: a per-install enrollment key and a one-command installer for Windows and Linux, served from your own server.
 
