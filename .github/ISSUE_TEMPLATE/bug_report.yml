@@ -1,0 +1,54 @@
+name: Report a bug
+description: Something in the NeuryxIQ On-Premises Edition is not working as described.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report this. Please do not paste passwords, keys, patient data or any information you are not allowed to share. For a private or security report, email michael.romansky@amhage.com instead.
+  - type: dropdown
+    id: install
+    attributes:
+      label: How is NeuryxIQ installed?
+      options:
+        - Windows installer (NeuryxIQ-Setup.exe)
+        - Docker Compose bundle (Linux or macOS)
+        - Virtual appliance (OVA)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Shown at the bottom of the NeuryxIQ window, for example 1.0.3.
+      placeholder: "1.0.3"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or error messages
+      description: For example the output of up.ps1 or up.sh, or `docker compose logs backend --tail 100` run in the NeuryxIQ folder.
+      render: shell
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11 23H2, Ubuntu 24.04, macOS 15"
